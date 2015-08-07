@@ -50,9 +50,9 @@
                 </div>
                	<!--- Confirm close pop up---->
 
-                <h2 align="center" class="Blue">Create a bussiness services listing</h2>
+                <h2 align="center" class="Blue">Create a business services listing</h2>
 
-         		<div style="text-align:center"><i style="font-size:7pt; color:#999999">Tell our member about your business</i></div>
+         		<div style="text-align:center"><i style="font-size:7pt; color:#999999">Tell our members about your business</i></div>
 				 <?php /*?><form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post" enctype="multipart/form-data" id="business_listing_step1" ><?php */?>
                  <?php $form=$this->beginWidget('CActiveForm', array('id'=>'businesslisting-form','enableAjaxValidation'=>false, 'htmlOptions'=>array('onSubmit'=>'return form_validation();')));
 				     echo $form->hiddenField($model,'user_default_business_blid',array('size'=>60,'maxlength'=>100));

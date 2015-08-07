@@ -34,7 +34,7 @@ class Bfavourites extends CActiveRecord
 	{
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
-		return array(
+		return array
 			array('user_default_business_id, blisting_id', 'required'),
 			// array('country', 'length', 'max'=>250),
 			// The following rule is used by search().

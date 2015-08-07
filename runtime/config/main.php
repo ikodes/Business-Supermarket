@@ -83,7 +83,7 @@ return array(
 		
 		'urlManager'=>array(
 			'urlFormat'=>'path',
-			'baseUrl' => 'http://localhost/supermarket-new/www',
+			'baseUrl' => 'http://localhost/supermarket-new/Business-Supermarket-0.0.1/www',
             'showScriptName'=>false,
             'caseSensitive'=>false, 
 			'rules'=>array(
@@ -223,6 +223,6 @@ return array(
                 'PAYPAL_API_SIGNATURE'=>'AqrGSLLg.RM1.zYa3DPLLAPI8zD1AJ4KELcC6UpxtkAEZ5tCogqYmGIO',
 
                 'PAYPAL_MODE'=>'live',   // sandbox/live  default=sandbox
-                'pageSize'=>6
+        'pageSize'=>6
 	),
 );

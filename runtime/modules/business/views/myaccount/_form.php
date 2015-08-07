@@ -360,13 +360,31 @@ left: 255px !important;
                         <span class="floatLeft">Member Since:</span>
                         <span class="floatRight"> <?php echo $model->user_default_business_rdate; ?></span>
                         <br />
+                        <span class="floatLeft">Page visits:</span>
+                        <span class="floatRight"> 0</span>
+                        <br />
                         <span class="floatLeft">Average user rating:</span>
-                        <span class="floatRight golden"> *****</span>
+                        <span class="floatRight golden">*****</span>
+                        <br />
+                        <span class="floatLeft">Banner advert submission:</span>
+                        <span class="floatRight"> 0</span>
+                        <br />
+                        <span class="floatLeft">Banner advert clicks:</span>
+                        <span class="floatRight"> 0</span>
                         <br />
                         <span class="floatLeft">Sample submissions:</span>
-                        <span class="floatRight ptt"> 0</span>
+                        <span class="floatRight"> 0</span>
                         <br />
-                        <span class="floatLeft">Banner add submission:</span>
+                        <span class="floatLeft">Sample feedback received:</span>
+                        <span class="floatRight"> 0</span>
+                        <br />                        
+                        <span class="floatLeft">User downloads:</span>
+                        <span class="floatRight"> 0</span>
+                        <br />
+                        <span class="floatLeft">User favourites:</span>
+                        <span class="floatRight"> 0</span>
+                        <br />
+                        <span class="floatLeft">Reputation:</span>
                         <span class="floatRight"> 0</span>
                         <br />
                     </p>

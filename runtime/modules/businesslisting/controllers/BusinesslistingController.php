@@ -81,7 +81,7 @@ class BusinesslistingController extends Controller
 	    $criteria1 = new CDbCriteria;
 	    $criteria1->select='t.*,tuser.user_default_business_name as user_default_business_name,tcountry.user_default_country_name';
 	    $criteria1->join = 'LEFT OUTER JOIN `user_default_business` tuser on tuser.user_default_business_id = t.user_default_business_id LEFT OUTER JOIN `user_default_business_addresses` tuseradd on tuseradd.user_default_business_id = t.user_default_business_id LEFT OUTER JOIN `user_default_country` tcountry on tcountry.user_default_country_id = tuseradd.user_default_business_country';
-	    $criteria1->compare('user_default_business_category','Services',true);
+	    $criteria1->compare('user_default_business_category',1,true);
 	    $criteria1->compare('user_default_business_blistingstatus',1,true);
 	    $criteria1->compare('user_default_business_breject_list',0,true);
 	    $sort_string = '';
@@ -121,6 +121,7 @@ class BusinesslistingController extends Controller
 	    if(isset($_REQUEST['looking_for'])){
 	        $criteria1->compare('user_default_business_profession',$_REQUEST['looking_for'],true);
 	    }
+
 
 	    $total1 = Businesslisting::model()->count($criteria1); 
 	    
@@ -186,8 +187,8 @@ class BusinesslistingController extends Controller
         $listid = $_REQUEST['blistid'];
         $model = $this->loadModel($listid);
         $user_default_business_id = Yii::app()->user->id;
+        
         $fav_exists = Bfavourites::model()->findByAttributes(array('user_default_business_id'=>$user_default_business_id,'blisting_id'=>$listid));
-
         if(!$fav_exists){
             Yii::app()->user->setFlash('info','The listing has already been removed from Favourites!');
         }
@@ -236,7 +237,7 @@ class BusinesslistingController extends Controller
 		
 		if(isset($blistid) && $blistid !=""){
             
-            $model = Businesslisting::model()->find("user_default_business_id = '".Yii::app()->user->Id."' and  user_default_business_blid ='".$blistid."'");
+            $model = Businesslisting::model()->find("user_default_business_id = '".Yii::app()->user->getState('uid')."' and  user_default_business_blid ='".$blistid."'");    
               
         }else {
            $model= new Businesslisting;
@@ -250,22 +251,21 @@ class BusinesslistingController extends Controller
 		{
 			//$model->attributes=$_POST['Businesslisting'];
 			$post = $_POST['Businesslisting'];
-
 			$model->user_default_business_title = $post['user_default_business_title'] ;
 			$model->user_default_business_category = $post['user_default_business_category'] ;
 			$model->user_default_business_profession = $post['user_default_business_profession'] ;
 			$model->user_default_business_viewlimit = $post['user_default_business_viewlimit'] ;
 			$model->user_default_business_slogon = $post['user_default_business_slogon'] ;
 			$model->user_default_business_whoweare = $post['user_default_business_whoweare'] ;
-            $model->user_default_business_whatwecando = $post['user_default_business_whatwecando'];
 			$model->user_default_business_offer = $post['user_default_business_offer'] ;
-			$model->user_default_business_datetime = date('Y-m-d H:i:s');
+			$model->user_default_business_datetime = date('Y-m-d H:i:s'); 
+			$model->user_default_business_id = Yii::app()->user->getState('uid'); 
 			$model->user_default_business_status = 0;
             $model->user_default_business_keyword = $post['user_default_business_keyword'];
 			$model->attributes=$_POST['Businesslisting']; 
 			if($model->validate())
 			{
-			 	$model->user_default_business_id = Yii::app()->user->Id;
+			 	$model->user_default_business_id = Yii::app()->user->getState('uid');
 				if($model->save())
 				{	
 				    if($_POST['btnsaveforlater']==1){ 

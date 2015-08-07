@@ -122,17 +122,17 @@ $this->breadcrumbs=array(
         <?php $posts_per_page=isset($_REQUEST['rows'])?$_REQUEST['rows']:12;$count=0; if($posts) {foreach ($posts as $post) {if($count%2==0){$color='Grey';}else{$color='Mauve';}?>
             <tr onmouseover="ChangeColor<?php echo $color; ?>(this, true);"
                 onmouseout="ChangeColor<?php echo $color; ?>(this, false);"
-                onclick="DoNav('<?php echo Yii::app()->createUrl('businesslisting/view?id='.$post->user_default_business_blid);?>');"
+                onclick="DoNav('<?php echo Yii::app()->createUrl('businesslisting/view?id='.$post->drg_blid);?>');"
                 class="<?php echo $color; ?>Row">
                 <?php
                 // $blising = Businesslisting::model()->findByAttributes(array('drg_uid' =>$post->drg_uid));
                 // print_r($blising);
                 ?>
 
-                <td width="50px;"><?php echo $post->user_default_business_profession;?></td>
-                <td width="120px;"><?php echo $post->user_default_business_title;?></td>
-                <td width="290px;"><?php echo $post->user_default_business_whoweare;?></td>
-                <td width="90px;"><?php echo Country::model()->getRowTitle($post->user_default_business_viewlimit);?></td>
+                <td width="50px;"><?php echo Listinglookingfor::model()->getRowTitle($post->drg_profession);?></td>
+                <td width="120px;"><?php echo $post->co_name;?></td>
+                <td width="290px;"><?php echo $post->drg_whoweare;?></td>
+                <td width="90px;"><?php echo Country::model()->getRowTitle($post->drg_viewlimit);?></td>
                 <?php /* <td width="80px;">&nbsp;</td> */ ?>
                 <td width="60px;">NYR</td>
 
@@ -597,12 +597,12 @@ $this->breadcrumbs=array(
         <?php $posts_per_page=isset($_REQUEST['rows'])?$_REQUEST['rows']:12;$count=0; if($fav_posts) {foreach ($fav_posts as $post) {if($count%2==0){$color='Grey';}else{$color='Mauve';}?>
             <tr onmouseover="ChangeColor<?php echo $color; ?>(this, true);"
                 onmouseout="ChangeColor<?php echo $color; ?>(this, false);"
-                onclick="DoNav('<?php echo Yii::app()->createUrl('businesslisting/view?id='.$post->user_default_business_blid);?>');"
+                onclick="DoNav('<?php echo Yii::app()->createUrl('businesslisting/view?id='.$post->drg_blid);?>');"
                 class="<?php echo $color; ?>Row">
-                <td><?php echo $post->user_default_business_profession;?></td>
-                <td><?php echo $post->user_default_business_title;?></td>
+                <td><?php echo Listinglookingfor::model()->getRowTitle($post->drg_profession);?></td>
+                <td><?php echo $blisting->co_name;?></td>
                 <td><?php //echo $post->drg_desc;?></td>
-                <td><?php echo Country::model()->getRowTitle($post->user_default_business_viewlimit);?></td>
+                <td><?php echo Country::model()->getRowTitle($blisting->drg_country);?></td>
                 <td>NYR</td>
             </tr>
             <?php $count++;}} if($count<12){$j=12-$count;for($i=0;$i<$j;$i++){if($count%2==0){$color='Grey';}else{$color='Mauve';}?>

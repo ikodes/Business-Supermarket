@@ -28,16 +28,23 @@ $this->breadcrumbs=array(
 
                     18/03/2012</a></li>
 
-                  <li><a href="#tab2">Reviews</a></li>
+                  <li><a href="#tab2">Voice your Opinion<br />
 
-                  <li><a href="#tab3">Samples</a></li>
+                    (No of comments)</a></li>
 
-                  <li><a href="#tab4">Downloads</a></li>
+                  <li><a href="#tab3">Request a Sample<br />
 
-                  <li><a href="#tab5">News &
-                          <br />Updates</a></li>
+                    (0)</a></li>
 
-                  <li><a href="#tab6">FAQ’s</a></li>
+                  <li><a href="#tab4">Open for Bidding<br />
+
+                    (0)</a></li>
+
+                  <li><a href="#tab5">Open for Investment<br />
+
+                    (0)</a></li>
+
+                  <li><a href="#tab6">Investor Area</a></li>
 
                   <div class="clear"></div>
 
@@ -57,8 +64,8 @@ $this->breadcrumbs=array(
 					
                 $user_default_business_id = Yii::app()->user->id;
 				
-                 $fav_exists = Bfavourites::model()->findByAttributes(array('user_default_business_id'=>$user_default_business_id,'blisting_id'=>$model->user_default_business_blid));
-
+                /* $fav_exists = Bfavourites::model()->findByAttributes(array('user_default_business_id'=>$user_default_business_id,'blisting_id'=>$model->user_default_business_blid));
+                
 				if($fav_exists){
                     $btn_text = 'Remove from favourites';
                     $btn_link = 'remove_favourite';
@@ -67,7 +74,9 @@ $this->breadcrumbs=array(
                     $btn_text = 'Add to favourites';
                     $btn_link = 'add_favourite';
                 } 
-
+				*/
+				$btn_text = 'Add to favourites';
+                    $btn_link = 'add_favourite';
                 ?>
 
             <?php 
@@ -332,6 +341,8 @@ $this->breadcrumbs=array(
         </div>
         <div id="tab2" class="sign-up-tab_content">
 
+            <img src="images/voice-your-opinon.png" alt="" />       
+
         </div> <!-- /End of tab2 Promotions tab -->
 
         
@@ -340,7 +351,7 @@ $this->breadcrumbs=array(
 
                   <div> <img src="images/samples.png" alt="" /> </div>
 
-        </div>
+                </div>
 
         <!-- /End of tab3 Product samples tab -->
 

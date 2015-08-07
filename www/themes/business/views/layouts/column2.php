@@ -11,7 +11,7 @@
     if($sliderfile!="")
             {include('themes/business/views/slider/'.$sliderfile);}
         else
-            {$this->renderPartial('//slider/index');}
+            {$this->renderPartial('//site/slider');}    
     ?>
 		
     <?php $this->renderPartial('//layouts/breadcrumbs'); ?>
