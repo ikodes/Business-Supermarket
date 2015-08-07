@@ -1,0 +1,47 @@
+ffmpeg version 1.0.10 Copyright (c) 2000-2014 the FFmpeg developers
+  built on Dec  6 2014 11:08:55 with gcc 4.7 (Debian 4.7.2-5)
+  configuration: --enable-gpl --enable-nonfree --enable-libfaac --enable-libgsm --enable-libmp3lame --enable-libtheora --enable-libvorbis --enable-libx264 --enable-libxvid --enable-zlib --enable-postproc --enable-swscale --enable-pthreads --enable-x11grab --enable-libdc1394 --enable-version3 --enable-libopencore-amrnb --enable-libopencore-amrwb
+  libavutil      51. 73.101 / 51. 73.101
+  libavcodec     54. 59.100 / 54. 59.100
+  libavformat    54. 29.104 / 54. 29.104
+  libavdevice    54.  2.101 / 54.  2.101
+  libavfilter     3. 17.100 /  3. 17.100
+  libswscale      2.  1.101 /  2.  1.101
+  libswresample   0. 15.100 /  0. 15.100
+  libpostproc    52.  0.100 / 52.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/business-supermarket.co.uk/web/www/temp/0975441001438106382.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 1
+    compatible_brands: isomavc1mp42
+    creation_time   : 2014-11-03 01:13:47
+  Duration: 00:01:00.07, start: 0.000000, bitrate: 290 kb/s
+    Stream #0:0(und): Video: h264 (Constrained Baseline) (avc1 / 0x31637661), yuv420p, 300x250 [SAR 1:1 DAR 6:5], 242 kb/s, 25 fps, 25 tbr, 25 tbn, 50 tbc
+    Metadata:
+      creation_time   : 2014-11-03 01:13:44
+      handler_name    : GPAC ISO Video Handler
+    Stream #0:1(und): Audio: aac (mp4a / 0x6134706D), 44100 Hz, mono, s16, 46 kb/s
+    Metadata:
+      creation_time   : 2014-11-03 01:13:47
+      handler_name    : GPAC ISO Audio Handler
+Please use -b:a or -b:v, -b is ambiguous
+Output #0, flv, to '/var/www/business-supermarket.co.uk/web/www/upload/users/jbv_66/videos/0975441001438106382.flv':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 1
+    compatible_brands: isomavc1mp42
+    encoder         : Lavf54.29.104
+    Stream #0:0(und): Video: flv1 ([2][0][0][0] / 0x0002), yuv420p, 512x384 [SAR 9:10 DAR 6:5], q=2-31, 1000 kb/s, 1k tbn, 30 tbc
+    Metadata:
+      creation_time   : 2014-11-03 01:13:44
+      handler_name    : GPAC ISO Video Handler
+    Stream #0:1(und): Audio: mp3 ([2][0][0][0] / 0x0002), 44100 Hz, mono, s16, 128 kb/s
+    Metadata:
+      creation_time   : 2014-11-03 01:13:47
+      handler_name    : GPAC ISO Audio Handler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 -> flv)
+  Stream #0:1 -> #0:1 (aac -> libmp3lame)
+Press [q] to stop, [?] for help
+frame=  147 fps=0.0 q=3.4 size=     851kB time=00:00:05.86 bitrate=1188.1kbits/s    frame=  263 fps=260 q=4.2 size=    1529kB time=00:00:10.63 bitrate=1178.4kbits/s    frame=  417 fps=275 q=8.1 size=    2395kB time=00:00:16.66 bitrate=1177.4kbits/s    frame=  569 fps=282 q=2.9 size=    3189kB time=00:00:22.82 bitrate=1144.4kbits/s    frame=  726 fps=288 q=2.8 size=    3981kB time=00:00:29.17 bitrate=1117.8kbits/s    frame=  867 fps=287 q=3.6 size=    4807kB time=00:00:34.97 bitrate=1125.9kbits/s    frame= 1010 fps=287 q=3.7 size=    5651kB time=00:00:40.72 bitrate=1136.8kbits/s    frame= 1152 fps=286 q=4.9 size=    6461kB time=00:00:46.49 bitrate=1138.4kbits/s    frame= 1293 fps=286 q=4.6 size=    7260kB time=00:00:52.24 bitrate=1138.4kbits/s    frame= 1437 fps=286 q=3.9 size=    8001kB time=00:00:57.52 bitrate=1139.5kbits/s    frame= 1500 fps=286 q=4.5 Lsize=    8370kB time=00:01:00.08 bitrate=1141.3kbits/s    
+video:7372kB audio:939kB subtitle:0 global headers:0kB muxing overhead 0.719089%

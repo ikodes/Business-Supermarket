@@ -1,0 +1,45 @@
+ffmpeg version 1.0.10 Copyright (c) 2000-2014 the FFmpeg developers
+  built on Dec  6 2014 11:08:55 with gcc 4.7 (Debian 4.7.2-5)
+  configuration: --enable-gpl --enable-nonfree --enable-libfaac --enable-libgsm --enable-libmp3lame --enable-libtheora --enable-libvorbis --enable-libx264 --enable-libxvid --enable-zlib --enable-postproc --enable-swscale --enable-pthreads --enable-x11grab --enable-libdc1394 --enable-version3 --enable-libopencore-amrnb --enable-libopencore-amrwb
+  libavutil      51. 73.101 / 51. 73.101
+  libavcodec     54. 59.100 / 54. 59.100
+  libavformat    54. 29.104 / 54. 29.104
+  libavdevice    54.  2.101 / 54.  2.101
+  libavfilter     3. 17.100 /  3. 17.100
+  libswscale      2.  1.101 /  2.  1.101
+  libswresample   0. 15.100 /  0. 15.100
+  libpostproc    52.  0.100 / 52.  0.100
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x1ecd240] multiple edit list entries, a/v desync might occur, patch welcome
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/business-supermarket.co.uk/web/www/temp/0763714001438196540.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42isom
+    creation_time   : 2013-06-07 03:52:44
+    encoder         : mp4creator 1.6.1d
+  Duration: 00:02:20.56, start: 0.000000, bitrate: 868 kb/s
+    Stream #0:0(eng): Video: mpeg4 (Simple Profile) (mp4v / 0x7634706D), yuv420p, 700x400 [SAR 1:1 DAR 7:4], 761 kb/s, 23.98 fps, 23.98 tbr, 90k tbn, 2997 tbc
+    Metadata:
+      creation_time   : 2013-06-07 03:52:44
+    Stream #0:1(eng): Audio: aac (mp4a / 0x6134706D), 44100 Hz, stereo, s16, 104 kb/s
+    Metadata:
+      creation_time   : 2013-06-07 03:52:47
+Please use -b:a or -b:v, -b is ambiguous
+Output #0, flv, to '/var/www/business-supermarket.co.uk/web/www/upload/users/jbv_66/videos/0763714001438196540.flv':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42isom
+    encoder         : Lavf54.29.104
+    Stream #0:0(eng): Video: flv1 ([2][0][0][0] / 0x0002), yuv420p, 512x384 [SAR 21:16 DAR 7:4], q=2-31, 1000 kb/s, 1k tbn, 30 tbc
+    Metadata:
+      creation_time   : 2013-06-07 03:52:44
+    Stream #0:1(eng): Audio: mp3 ([2][0][0][0] / 0x0002), 44100 Hz, stereo, s16, 128 kb/s
+    Metadata:
+      creation_time   : 2013-06-07 03:52:47
+Stream mapping:
+  Stream #0:0 -> #0:0 (mpeg4 -> flv)
+  Stream #0:1 -> #0:1 (aac -> libmp3lame)
+Press [q] to stop, [?] for help
+frame=  110 fps=0.0 q=5.4 size=     594kB time=00:00:04.56 bitrate=1065.9kbits/s    frame=  225 fps=224 q=3.8 size=    1180kB time=00:00:09.36 bitrate=1031.8kbits/s    frame=  343 fps=228 q=2.6 size=    1796kB time=00:00:14.30 bitrate=1028.8kbits/s    frame=  461 fps=229 q=2.8 size=    2504kB time=00:00:19.23 bitrate=1066.6kbits/s    frame=  576 fps=230 q=2.6 size=    3207kB time=00:00:24.00 bitrate=1094.8kbits/s    frame=  687 fps=228 q=2.7 size=    3869kB time=00:00:28.63 bitrate=1107.0kbits/s    frame=  807 fps=230 q=2.3 size=    4535kB time=00:00:33.66 bitrate=1103.5kbits/s    frame=  932 fps=232 q=2.0 size=    5180kB time=00:00:38.86 bitrate=1091.9kbits/s    frame= 1044 fps=231 q=3.7 size=    5894kB time=00:00:43.53 bitrate=1109.2kbits/s    frame= 1159 fps=231 q=5.0 size=    6676kB time=00:00:48.33 bitrate=1131.6kbits/s    frame= 1278 fps=232 q=2.7 size=    7353kB time=00:00:53.30 bitrate=1130.1kbits/s    frame= 1396 fps=232 q=4.7 size=    7969kB time=00:00:58.20 bitrate=1121.7kbits/s    frame= 1514 fps=232 q=2.9 size=    8717kB time=00:01:03.13 bitrate=1131.1kbits/s    frame= 1630 fps=232 q=3.4 size=    9354kB time=00:01:07.96 bitrate=1127.4kbits/s    frame= 1745 fps=232 q=4.2 size=    9994kB time=00:01:12.76 bitrate=1125.1kbits/s    frame= 1860 fps=232 q=5.8 size=   10761kB time=00:01:17.56 bitrate=1136.5kbits/s    frame= 1978 fps=232 q=3.7 size=   11393kB time=00:01:22.50 bitrate=1131.3kbits/s    frame= 2085 fps=228 q=5.5 size=   12016kB time=00:01:26.96 bitrate=1131.9kbits/s    frame= 2199 fps=228 q=4.9 size=   12708kB time=00:01:31.70 bitrate=1135.3kbits/s    frame= 2318 fps=228 q=3.2 size=   13356kB time=00:01:36.66 bitrate=1131.9kbits/s    frame= 2431 fps=228 q=4.0 size=   14008kB time=00:01:41.40 bitrate=1131.7kbits/s    frame= 2550 fps=229 q=4.3 size=   14682kB time=00:01:46.33 bitrate=1131.1kbits/s    frame= 2669 fps=229 q=2.0 size=   15410kB time=00:01:51.30 bitrate=1134.2kbits/s    frame= 2783 fps=229 q=7.0 size=   16060kB time=00:01:56.06 bitrate=1133.5kbits/s    frame= 2898 fps=229 q=4.7 size=   16734kB time=00:02:00.86 bitrate=1134.2kbits/s    frame= 3018 fps=229 q=2.8 size=   17363kB time=00:02:05.86 bitrate=1130.0kbits/s    frame= 3137 fps=230 q=2.2 size=   18001kB time=00:02:10.83 bitrate=1127.1kbits/s    frame= 3259 fps=230 q=3.1 size=   18652kB time=00:02:15.93 bitrate=1124.1kbits/s    frame= 3361 fps=229 q=2.0 size=   19387kB time=00:02:20.19 bitrate=1132.8kbits/s    frame= 3365 fps=229 q=2.0 Lsize=   19404kB time=00:02:20.64 bitrate=1130.2kbits/s    
+video:17069kB audio:2198kB subtitle:0 global headers:0kB muxing overhead 0.711502%

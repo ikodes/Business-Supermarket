@@ -1,0 +1,48 @@
+ffmpeg version 1.0.10 Copyright (c) 2000-2014 the FFmpeg developers
+  built on Dec  6 2014 11:08:55 with gcc 4.7 (Debian 4.7.2-5)
+  configuration: --enable-gpl --enable-nonfree --enable-libfaac --enable-libgsm --enable-libmp3lame --enable-libtheora --enable-libvorbis --enable-libx264 --enable-libxvid --enable-zlib --enable-postproc --enable-swscale --enable-pthreads --enable-x11grab --enable-libdc1394 --enable-version3 --enable-libopencore-amrnb --enable-libopencore-amrwb
+  libavutil      51. 73.101 / 51. 73.101
+  libavcodec     54. 59.100 / 54. 59.100
+  libavformat    54. 29.104 / 54. 29.104
+  libavdevice    54.  2.101 / 54.  2.101
+  libavfilter     3. 17.100 /  3. 17.100
+  libswscale      2.  1.101 /  2.  1.101
+  libswresample   0. 15.100 /  0. 15.100
+  libpostproc    52.  0.100 / 52.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/business-supermarket.co.uk/web/www/temp/0443024001438105725.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2mp41
+    creation_time   : 2014-10-18 05:10:45
+    encoder         : Lavf51.12.1
+  Duration: 00:00:33.68, start: 0.000000, bitrate: 801 kb/s
+    Stream #0:0(und): Video: mpeg4 (Simple Profile) (mp4v / 0x7634706D), yuv420p, 320x240 [SAR 125:122 DAR 250:183], 669 kb/s, SAR 327:320 DAR 109:80, 25 fps, 25 tbr, 25 tbn, 25 tbc
+    Metadata:
+      creation_time   : 2014-10-18 05:10:59
+      handler_name    : VideoHandler
+    Stream #0:1(und): Audio: aac (mp4a / 0x6134706D), 44100 Hz, stereo, s16, 127 kb/s
+    Metadata:
+      creation_time   : 2014-10-18 05:10:59
+      handler_name    : SoundHandler
+Please use -b:a or -b:v, -b is ambiguous
+Output #0, flv, to '/var/www/business-supermarket.co.uk/web/www/upload/users/jbv_66/videos/0443024001438105725.flv':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2mp41
+    encoder         : Lavf54.29.104
+    Stream #0:0(und): Video: flv1 ([2][0][0][0] / 0x0002), yuv420p, 512x384 [SAR 327:320 DAR 109:80], q=2-31, 1000 kb/s, 1k tbn, 30 tbc
+    Metadata:
+      creation_time   : 2014-10-18 05:10:59
+      handler_name    : VideoHandler
+    Stream #0:1(und): Audio: mp3 ([2][0][0][0] / 0x0002), 44100 Hz, stereo, s16, 128 kb/s
+    Metadata:
+      creation_time   : 2014-10-18 05:10:59
+      handler_name    : SoundHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (mpeg4 -> flv)
+  Stream #0:1 -> #0:1 (aac -> libmp3lame)
+Press [q] to stop, [?] for help
+frame=  122 fps=0.0 q=3.6 size=     780kB time=00:00:04.93 bitrate=1295.1kbits/s    frame=  257 fps=256 q=3.8 size=    1479kB time=00:00:10.31 bitrate=1174.1kbits/s    frame=  388 fps=258 q=3.7 size=    2211kB time=00:00:15.59 bitrate=1161.5kbits/s    frame=  516 fps=258 q=4.5 size=    2991kB time=00:00:20.66 bitrate=1185.8kbits/s    frame=  646 fps=258 q=4.5 size=    3712kB time=00:00:25.88 bitrate=1174.8kbits/s    frame=  776 fps=258 q=3.6 size=    4406kB time=00:00:31.05 bitrate=1162.1kbits/s    frame=  842 fps=259 q=4.1 Lsize=    4741kB time=00:00:33.66 bitrate=1153.6kbits/s    
+video:4183kB audio:524kB subtitle:0 global headers:0kB muxing overhead 0.713878%

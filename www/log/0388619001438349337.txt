@@ -1,0 +1,28 @@
+ffmpeg version 1.0.10 Copyright (c) 2000-2014 the FFmpeg developers
+  built on Dec  6 2014 11:08:55 with gcc 4.7 (Debian 4.7.2-5)
+  configuration: --enable-gpl --enable-nonfree --enable-libfaac --enable-libgsm --enable-libmp3lame --enable-libtheora --enable-libvorbis --enable-libx264 --enable-libxvid --enable-zlib --enable-postproc --enable-swscale --enable-pthreads --enable-x11grab --enable-libdc1394 --enable-version3 --enable-libopencore-amrnb --enable-libopencore-amrwb
+  libavutil      51. 73.101 / 51. 73.101
+  libavcodec     54. 59.100 / 54. 59.100
+  libavformat    54. 29.104 / 54. 29.104
+  libavdevice    54.  2.101 / 54.  2.101
+  libavfilter     3. 17.100 /  3. 17.100
+  libswscale      2.  1.101 /  2.  1.101
+  libswresample   0. 15.100 /  0. 15.100
+  libpostproc    52.  0.100 / 52.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/business-supermarket.co.uk/web/www/temp/0388619001438349337.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2014-06-18 17:13:32
+  Duration: 00:00:10.04, start: 0.000000, bitrate: 3261 kb/s
+    Stream #0:0(eng): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 1920x1080 [SAR 1:1 DAR 16:9], 3011 kb/s, 30 fps, 30 tbr, 30k tbn, 60 tbc
+    Metadata:
+      creation_time   : 2014-06-18 17:13:32
+      handler_name    : Alias Data Handler
+    Stream #0:1(eng): Audio: aac (mp4a / 0x6134706D), 32000 Hz, stereo, s16, 254 kb/s
+    Metadata:
+      creation_time   : 2014-06-18 17:13:32
+      handler_name    : Alias Data Handler
+Please use -b:a or -b:v, -b is ambiguous
+File '/var/www/business-supermarket.co.uk/web/www/upload/users/updesigns_988/videos/0388619001438349337.flv' already exists. Overwrite ? [y/N] Not overwriting - exiting

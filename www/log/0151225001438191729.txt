@@ -1,0 +1,47 @@
+ffmpeg version 1.0.10 Copyright (c) 2000-2014 the FFmpeg developers
+  built on Dec  6 2014 11:08:55 with gcc 4.7 (Debian 4.7.2-5)
+  configuration: --enable-gpl --enable-nonfree --enable-libfaac --enable-libgsm --enable-libmp3lame --enable-libtheora --enable-libvorbis --enable-libx264 --enable-libxvid --enable-zlib --enable-postproc --enable-swscale --enable-pthreads --enable-x11grab --enable-libdc1394 --enable-version3 --enable-libopencore-amrnb --enable-libopencore-amrwb
+  libavutil      51. 73.101 / 51. 73.101
+  libavcodec     54. 59.100 / 54. 59.100
+  libavformat    54. 29.104 / 54. 29.104
+  libavdevice    54.  2.101 / 54.  2.101
+  libavfilter     3. 17.100 /  3. 17.100
+  libswscale      2.  1.101 /  2.  1.101
+  libswresample   0. 15.100 /  0. 15.100
+  libpostproc    52.  0.100 / 52.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/business-supermarket.co.uk/web/www/temp/0151225001438191729.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: isommp42
+    creation_time   : 2015-07-08 12:50:05
+  Duration: 00:00:18.06, start: 0.000000, bitrate: 227 kb/s
+    Stream #0:0(eng): Video: h264 (Baseline) (avc1 / 0x31637661), yuv420p, 854x426 [SAR 1:1 DAR 427:213], 170 kb/s, 27 fps, 27 tbr, 54 tbn, 54 tbc
+    Metadata:
+      creation_time   : 2015-07-08 12:50:06
+      handler_name    : Mainconcept MP4 Video Media Handler
+    Stream #0:1(eng): Audio: aac (mp4a / 0x6134706D), 44100 Hz, stereo, s16, 53 kb/s
+    Metadata:
+      creation_time   : 2015-07-08 12:50:06
+      handler_name    : Mainconcept MP4 Sound Media Handler
+Please use -b:a or -b:v, -b is ambiguous
+Output #0, flv, to '/var/www/business-supermarket.co.uk/web/www/upload/users/jbv_66/videos/0151225001438191729.flv':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: isommp42
+    encoder         : Lavf54.29.104
+    Stream #0:0(eng): Video: flv1 ([2][0][0][0] / 0x0002), yuv420p, 512x384 [SAR 427:284 DAR 427:213], q=2-31, 1000 kb/s, 1k tbn, 30 tbc
+    Metadata:
+      creation_time   : 2015-07-08 12:50:06
+      handler_name    : Mainconcept MP4 Video Media Handler
+    Stream #0:1(eng): Audio: mp3 ([2][0][0][0] / 0x0002), 44100 Hz, stereo, s16, 128 kb/s
+    Metadata:
+      creation_time   : 2015-07-08 12:50:06
+      handler_name    : Mainconcept MP4 Sound Media Handler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 -> flv)
+  Stream #0:1 -> #0:1 (aac -> libmp3lame)
+Press [q] to stop, [?] for help
+frame=  152 fps=0.0 q=2.0 size=     802kB time=00:00:05.63 bitrate=1165.9kbits/s    frame=  306 fps=301 q=2.0 size=    1575kB time=00:00:11.33 bitrate=1138.6kbits/s    frame=  463 fps=305 q=2.0 size=    2339kB time=00:00:17.13 bitrate=1118.4kbits/s    frame=  487 fps=304 q=2.0 Lsize=    2564kB time=00:00:18.07 bitrate=1162.0kbits/s    
+video:2263kB audio:282kB subtitle:0 global headers:0kB muxing overhead 0.738806%

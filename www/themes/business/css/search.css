@@ -1,0 +1,126 @@
+/*  Theme Name: BusinessTheme 
+    URI: http://www.business-supermarket.com 
+	Description: These are additional styles created for search module
+    Title       : Search CSS
+    Author      : Anand
+    Author email: anand.seed@gmail.com
+    Version     : 0.1
+*/
+
+#search input[type="submit"]{
+    background: url("../images/buttons/search-button.png") no-repeat scroll left center transparent;
+    border: medium none;
+    cursor: pointer;
+    display: inline-block;
+    height: 22px;
+    vertical-align: top;
+    width: 30px;
+}
+
+#search input[type="text"] , #searchListingTitle input[type="text"] , #searchUsername input[type="text"] , #searchbyRL input[type="text"] {
+    padding: 2px 0px 2px 5px;
+    margin-right: -9px;
+   /* border-radius: 4px;*/
+    border: 1px solid #5C5C5C;
+    width: 290px;
+}
+
+.sortby input[type="radio"] {
+    margin-right: 16px;
+}
+.site_search{
+    margin: 15px;
+}
+
+.SearchPageNumbers a {
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.SearchNullPageNumbers a{
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.listing_title{
+
+	color:#A84793;
+	font-size: 15px;
+
+}
+
+.listing_desc{
+	color: #aa62b4;
+	font-size: 15px;
+    font-family: AuraBoldRegular, Helvetica, Arial;
+padding: 3px 0;
+}
+
+.searchTbl{
+	padding-right: 15px;
+	cursor:pointer;
+    margin-top: -25px;
+}
+
+.close_caform {
+     position: absolute;
+     top: -167px;
+     float: right;
+     right: 243px;
+     z-index: 100;
+ }
+
+.close_searchKeyNull {
+    position: absolute;
+    top: -103px;
+    float: right;
+    right: 243px;
+    z-index: 100;
+}
+.close_search {
+    position: absolute;
+    top: -168px;
+    float: right;
+    right: 243px;
+    z-index: 100;
+}
+.sortby {
+    margin-left: 20px;
+    font-size: 12px;
+    color: #000000;
+}
+
+div#search {
+float: right;
+margin-top: -19px;
+}#search-tab input[type=submit] {  background: url("../images/buttons/search-button.png") no-repeat scroll left center transparent;  height: 22px;  width: 30px;  border: medium none;  cursor: pointer;  display: inline-block;  vertical-align: top;}  
+.image-bg
+{
+    background-color: #fff;
+    border:1px solid #A84793;
+    height: 80px;
+    width: 120px;
+    margin: 10px;
+}
+.searchTbl table{
+
+    border-collapse: collapse;
+}
+.searchTbl td:first-child { border-right:3px solid  #fff; }
+
+.listing_title a{
+
+    font-family: AuraBoldRegular, Helvetica, Arial;
+    color:#A84793;
+    font-size: 20px;
+
+}
+.searchTbl td{
+    padding: 8px;
+}
+/*.searchTbl table tr:nth-child(even) { border:3px solid  #690; }*/
+
+.searchlabel{
+    color:#b0468b; font-size: 1em;font-weight: normal;
+    margin-bottom: 6px;
+}

@@ -1,0 +1,34 @@
+ffmpeg version 1.0.10 Copyright (c) 2000-2014 the FFmpeg developers
+  built on Dec  6 2014 11:08:55 with gcc 4.7 (Debian 4.7.2-5)
+  configuration: --enable-gpl --enable-nonfree --enable-libfaac --enable-libgsm --enable-libmp3lame --enable-libtheora --enable-libvorbis --enable-libx264 --enable-libxvid --enable-zlib --enable-postproc --enable-swscale --enable-pthreads --enable-x11grab --enable-libdc1394 --enable-version3 --enable-libopencore-amrnb --enable-libopencore-amrwb
+  libavutil      51. 73.101 / 51. 73.101
+  libavcodec     54. 59.100 / 54. 59.100
+  libavformat    54. 29.104 / 54. 29.104
+  libavdevice    54.  2.101 / 54.  2.101
+  libavfilter     3. 17.100 /  3. 17.100
+  libswscale      2.  1.101 /  2.  1.101
+  libswresample   0. 15.100 /  0. 15.100
+  libpostproc    52.  0.100 / 52.  0.100
+[mp3 @ 0x23d5360] Header missing
+Input #0, avi, from '/var/www/business-supermarket.co.uk/web/www/temp/0641290001438191468.avi':
+  Metadata:
+    encoder         : VirtualDubMod 1.5.10.2 (build 2542/release)
+  Duration: 00:01:02.93, start: 0.000000, bitrate: 1455 kb/s
+    Stream #0:0: Video: mpeg4 (Advanced Simple Profile) (XVID / 0x44495658), yuv420p, 720x304 [SAR 1:1 DAR 45:19], 23.98 tbr, 23.98 tbn, 23.98 tbc
+    Stream #0:1: Audio: mp3 (U[0][0][0] / 0x0055), 48000 Hz, stereo, s16, 128 kb/s
+Please use -b:a or -b:v, -b is ambiguous
+Output #0, flv, to '/var/www/business-supermarket.co.uk/web/www/upload/users/jag_1/videos/0641290001438191468.flv':
+  Metadata:
+    encoder         : Lavf54.29.104
+    Stream #0:0: Video: flv1 ([2][0][0][0] / 0x0002), yuv420p, 512x384 [SAR 135:76 DAR 45:19], q=2-31, 1000 kb/s, 1k tbn, 30 tbc
+    Stream #0:1: Audio: mp3 ([2][0][0][0] / 0x0002), 44100 Hz, stereo, s16, 128 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (mpeg4 -> flv)
+  Stream #0:1 -> #0:1 (mp3 -> libmp3lame)
+Press [q] to stop, [?] for help
+[mp3 @ 0x23d5360] Header missing
+Error while decoding stream #0:1: Invalid data found when processing input
+frame=  100 fps=0.0 q=8.0 size=     638kB time=00:00:04.72 bitrate=1106.2kbits/s    frame=  214 fps=213 q=10.9 size=    1329kB time=00:00:09.47 bitrate=1148.7kbits/s    frame=  323 fps=215 q=8.4 size=    1960kB time=00:00:14.04 bitrate=1143.0kbits/s    frame=  432 fps=215 q=17.9 size=    2589kB time=00:00:18.56 bitrate=1142.1kbits/s    frame=  539 fps=215 q=6.6 size=    3170kB time=00:00:23.03 bitrate=1127.2kbits/s    frame=  655 fps=218 q=3.3 size=    3703kB time=00:00:27.86 bitrate=1088.5kbits/s    frame=  772 fps=220 q=3.3 size=    4311kB time=00:00:32.75 bitrate=1078.4kbits/s    frame=  886 fps=221 q=5.4 size=    4962kB time=00:00:37.50 bitrate=1083.8kbits/s    frame= 1006 fps=223 q=2.8 size=    5630kB time=00:00:42.52 bitrate=1084.6kbits/s    frame= 1119 fps=223 q=2.2 size=    6356kB time=00:00:47.25 bitrate=1102.0kbits/s    frame= 1236 fps=224 q=5.8 size=    7076kB time=00:00:52.10 bitrate=1112.4kbits/s    frame= 1347 fps=224 q=7.6 size=    7784kB time=00:00:56.75 bitrate=1123.5kbits/s    frame= 1459 fps=224 q=2.8 size=    8474kB time=00:01:01.43 bitrate=1129.9kbits/s    incomplete frame
+Error while decoding stream #0:1: Invalid data found when processing input
+frame= 1509 fps=225 q=3.8 Lsize=    8685kB time=00:01:02.96 bitrate=1130.0kbits/s    
+video:7641kB audio:983kB subtitle:0 global headers:0kB muxing overhead 0.713515%

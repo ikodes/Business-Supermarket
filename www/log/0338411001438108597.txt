@@ -1,0 +1,44 @@
+ffmpeg version 1.0.10 Copyright (c) 2000-2014 the FFmpeg developers
+  built on Dec  6 2014 11:08:55 with gcc 4.7 (Debian 4.7.2-5)
+  configuration: --enable-gpl --enable-nonfree --enable-libfaac --enable-libgsm --enable-libmp3lame --enable-libtheora --enable-libvorbis --enable-libx264 --enable-libxvid --enable-zlib --enable-postproc --enable-swscale --enable-pthreads --enable-x11grab --enable-libdc1394 --enable-version3 --enable-libopencore-amrnb --enable-libopencore-amrwb
+  libavutil      51. 73.101 / 51. 73.101
+  libavcodec     54. 59.100 / 54. 59.100
+  libavformat    54. 29.104 / 54. 29.104
+  libavdevice    54.  2.101 / 54.  2.101
+  libavfilter     3. 17.100 /  3. 17.100
+  libswscale      2.  1.101 /  2.  1.101
+  libswresample   0. 15.100 /  0. 15.100
+  libpostproc    52.  0.100 / 52.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/business-supermarket.co.uk/web/www/temp/0338411001438108597.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42isomavc1
+    creation_time   : 2010-03-20 21:29:11
+    encoder         : HandBrake 0.9.4 2009112300
+  Duration: 00:00:05.56, start: 0.000000, bitrate: 551 kb/s
+    Stream #0:0(und): Video: h264 (Constrained Baseline) (avc1 / 0x31637661), yuv420p, 560x320, 465 kb/s, 30 fps, 30 tbr, 90k tbn, 60 tbc
+    Metadata:
+      creation_time   : 2010-03-20 21:29:11
+    Stream #0:1(eng): Audio: aac (mp4a / 0x6134706D), 48000 Hz, mono, s16, 83 kb/s
+    Metadata:
+      creation_time   : 2010-03-20 21:29:11
+Please use -b:a or -b:v, -b is ambiguous
+Output #0, flv, to '/var/www/business-supermarket.co.uk/web/www/upload/users/jbv_66/videos/0338411001438108597.flv':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42isomavc1
+    encoder         : Lavf54.29.104
+    Stream #0:0(und): Video: flv1 ([2][0][0][0] / 0x0002), yuv420p, 512x384, q=2-31, 1000 kb/s, 1k tbn, 30 tbc
+    Metadata:
+      creation_time   : 2010-03-20 21:29:11
+    Stream #0:1(eng): Audio: mp3 ([2][0][0][0] / 0x0002), 44100 Hz, mono, s16, 128 kb/s
+    Metadata:
+      creation_time   : 2010-03-20 21:29:11
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 -> flv)
+  Stream #0:1 -> #0:1 (aac -> libmp3lame)
+Press [q] to stop, [?] for help
+frame=  151 fps=0.0 q=4.5 size=     935kB time=00:00:05.03 bitrate=1522.4kbits/s    frame=  166 fps=0.0 q=4.3 Lsize=    1011kB time=00:00:05.58 bitrate=1482.5kbits/s    
+video:917kB audio:87kB subtitle:0 global headers:0kB muxing overhead 0.629355%
